@@ -1,9 +1,7 @@
 # Day 1 of being a JavaScripting English Major
 
-Hopefully, you are a student in the course, [*The JavaScripting English
-Major*](http://the-javascripting-english-major.org), in which case you
-should be forking this repository by clicking on the “Fork” button in the
-top-right of this page.
+Lets see if this works
+
 
 Forking it copies everything over to a new repository that you control, and
 from there, the limits to your project are limited to your own imagination.
