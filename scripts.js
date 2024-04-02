@@ -154,3 +154,106 @@
 
 // integerCheck(userInput)
 
+
+//iterating over the hard way
+
+// let userString, upperCaseMinusE, upperCasedString;
+// userString = prompt("What do you want to UPPeRCASe?");
+// upperCaseMinusE = function(string){
+//   let result;
+//   result = ""; 
+//   for ( let i = 0; i < string.length ; i = i + 1 ) {
+//     let letter;
+//     letter = string[i];
+//     if ( letter === "e" ) {
+//       // Change here.
+//       result = result + letter;
+//     } else {
+//       // And change here.
+//       result = result + letter.toUpperCase();
+//     }
+//   }
+//   return result;
+// };
+// upperCasedString = upperCaseMinusE(userString);
+// $("#response").html(upperCasedString);
+
+
+//iterating the simpler way (must be an array)
+
+// upperCaseMinusE = function(string){
+//     let result, stringArray;
+//     result = ""; 
+//     // Since forEach() only works on arrays, we have 
+//     // to convert the string to an array:
+//     stringArray = string.split("");
+//     // Now we call forEach() on stringArray:
+//     stringArray.forEach(function(letter){
+//       if ( letter === "e" ) {
+//         result = result + letter;
+//       } else {
+//         result = result + letter.toUpperCase();
+//       }
+//     }) // Note the parenthesis!
+//     return result;
+//   };
+
+
+  // dictionary array iteration this importantly creates a string rather than an array
+
+// let leonardo, donatello, raphael, michelangelo, turtles, weapons;
+// leonardo = {name: "Leonardo", color: "blue", weapon: "katana"};
+// donatello = {name: "Donatello", color: "purple", weapon: "bo"};
+// raphael = {name: "Raphael", color: "red", weapon: "sai"};
+// michelangelo = {name: "Michelangelo", color: "blue", weapon: "nunchaku"};
+// turtles = [leonardo, donatello, raphael, michelangelo];
+// weapons = ""; // a list of weapons.
+
+// turtles.forEach(function(turtle){
+//     weapons = weapons + turtle.weapon + " ";
+//   })
+
+
+// $("#response").html(weapons);
+
+
+//iterating over an array to create another array which we then turn into a string
+
+// let leonardo, donatello, raphael, michelangelo, turtles, weapons;
+// leonardo = {name: "Leonardo", color: "blue", weapon: "katana"};
+// donatello = {name: "Donatello", color: "purple", weapon: "bo"};
+// raphael = {name: "Raphael", color: "red", weapon: "sai"};
+// michelangelo = {name: "Michelangelo", color: "blue", weapon: "nunchaku"};
+// turtles = [leonardo, donatello, raphael, michelangelo];
+// weapons = turtles.map(function(turtle){
+//     return turtle.weapon;
+//   }).sort()
+  
+//   weapons[weapons.length - 1] =  "and " + weapons[weapons.length -1]
+
+//   weapons = weapons.join(", ");
+//   // weapons is now "bo, katana, nunchaku, sai". Sorted, with commas.
+//   $("#response").html(weapons);
+
+
+// //filtering with iteration
+
+//   let names, namesWithO;
+//   names = turtles.map(function(turtle){
+//     return turtle.name;
+//   }).sort();
+//   namesWithO = names.filter(function(name){
+//     return name.includes("o");
+//   }).join(", ");
+//   $("#response").html(namesWithO);
+
+
+// let numlist, doubleNumber, 
+// numList = [1,2,3]
+
+// doubleNumber= numList.map(function(num){
+//     doubleNum = num *2;
+//     return doubleNum;
+// }).join(", ");
+
+// $("#response").html(doubleNumber)
